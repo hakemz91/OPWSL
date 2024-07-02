@@ -1,5 +1,5 @@
 # OPWSL
-Improved version of NuWSL with minor but life changing feature updates.
+Improved version of NuWSL with minor but life changing feature updates. NuWSL is here: https://github.com/hakemz91/NuWSL
 
 ## Features
 
