@@ -9,7 +9,7 @@ Improved version of NuWSL with minor but life changing feature updates.
 4. Option to run the chat and saving the chat history (Q&A pairs) both into csv and txt files (localGPT only save into csv).
 5. A bit of colored texts for easy reading.
 6. Displaying time taken for generating response.
-7. Auto detect the same documents when ingesting documents.
+7. Auto detect the same documents when ingesting so no duplicate ingestion.
 
 ![Alt text](https://github.com/hakemz91/NuWSL/blob/main/01_im.png)
 
