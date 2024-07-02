@@ -6,7 +6,7 @@ bashrc_path = os.path.expanduser("~/.bashrc")
 # Code to be added to bashrc
 bashrc_code = """
 # Activate Conda environment
-conda activate NuWSL
+conda activate OPWSL
 
 # Function to run commands
 function run_commands() {
