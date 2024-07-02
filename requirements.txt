@@ -1,0 +1,28 @@
+# Natural Language Processing
+tokenizers==0.15.0
+langchain==0.0.267
+chromadb==0.4.6
+pdfminer.six==20221105
+InstructorEmbedding
+sentence-transformers==2.2.2
+faiss-cpu
+huggingface_hub
+transformers==4.35.2
+protobuf
+auto-gptq==0.5.1
+docx2txt
+unstructured
+unstructured[pdf]
+torch==2.1.1
+
+# Utilities
+urllib3==1.26.6
+accelerate
+bitsandbytes ; sys_platform != 'win32'
+bitsandbytes-windows ; sys_platform == 'win32'
+click
+flask
+requests
+
+# Excel File Manipulation
+openpyxl
