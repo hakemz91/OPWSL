@@ -95,7 +95,7 @@ Just delete the DB folder and reingesting back using option 4 or 5.
 
 ## How to Change Model
 
-The default model is the one that is working right now. Somehow if using another GPTQ quantized model, it will have problem. But the current model is smart enough for talking with your document. Maybe in future I will fix that.
+The default model is the one that is working right now. Somehow if using another 4 bit GPTQ quantized model, it will have problem. But the current model is smart enough for talking with your document. Maybe in future I will fix that.
 
 ## Forked from awesome original LocalGPT
 https://github.com/PromtEngineer/localGPT
