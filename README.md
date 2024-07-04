@@ -1,6 +1,8 @@
 # OPWSL
 Improved version of NuWSL with minor but life changing feature updates.
 
+# Note that
+First run will take some time to download the model. Let it finish. And GUI version will not loaded properly until everything downloaded and loaded. So please choose the console version first for convenience. After that you can restart and use GUI properly.
 ## Features
 
 1. Now have GUI option (but I don't recommend this because cmd console is much faster, clearer and simpler. Why makes our life harder? :D ).
