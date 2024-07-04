@@ -2,7 +2,9 @@
 Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can doing RAG using chromadb database which you can create easily with this. It is for NVIDIA GPU user and WSL2 Windows.
 
 ## Note that
-First run will take some time to download the model. Let it finish. And GUI version will not loaded properly until everything downloaded and loaded. So please choose the console version first for convenience. After that you can restart and use GUI properly.
+1. First put your pdf documents in SOURCE DOCEUMENTS folder and ingest or index your pdf documents with option 4. First time run it will download the embedding model so let it finish.
+2. Then run option 1 after that and let it finish to downloading the model. It will take some times depending on your internet speed. When it finish, you can chat with that or restart and use the GUI version. Do not use GUI version before doing any of those I mentioned you here.
+
 ## Features
 
 1. Now have GUI option (but I don't recommend this because cmd console is much faster, clearer and simpler. Why makes our life harder? :D ).
