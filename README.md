@@ -1,9 +1,5 @@
 # OPWSL
-Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can doing RAG using chromadb database which you can create easily with this. It is for NVIDIA GPU user and WSL2 Windows.
-
-## Note that
-1. First put your pdf documents in SOURCE DOCEUMENTS folder and ingest or index your pdf documents with option 4. First time run it will download the embedding model so let it finish.
-2. Then run option 1 after that and let it finish to downloading the model. It will take some times depending on your internet speed. When it finish, you can chat with that or restart and use the GUI version. Do not use GUI version before doing any of those I mentioned you here.
+Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can talk to your documents. And it is for NVIDIA GPU user and WSL2 Windows.
 
 ## Features
 
@@ -75,7 +71,11 @@ pip install -r requirements.txt
 CMAKE_ARGS="-DLLAMA_CUBLAS=on" FORCE_CMAKE=1 pip install llama-cpp-python==0.1.83 --no-cache-dir
 ```
 
-10. Done install! Now just close the wsl windows and then lauch again the launcher.bat and answer y. Choose which option number you want and then type it and press enter. First run will take some time because of downloading the model. After finish the selected option processing, it will ask if you want to run another option. If you do, let say after ingestion you want to run the chatting, just answer y and press enter and it will ask you again the available option.
+10. Done installation.
+
+## How to use
+1. First put your pdf, docs, txt and etc. (supported) documents in SOURCE DOCEUMENTS folder, start the launcher and choose Option 4 to ingest your documents. First time run it will download the embedding model so will take some time.
+2. Then to chat, run option 1 first and let it finish for downloading the chat model. It will take some times depending on your internet speed. When it finish, you can chat with that, or type exit, answer y and choose again the "chat with GUI" version, copy the url and open in browser.
 
 ## Export to .CSV and .TXT
 
@@ -95,7 +95,7 @@ Just delete the DB folder and reingesting back using option 4 or 5.
 
 ## How to Change Model
 
-The default model is the best model already for retrieving information. However if you want to change, just replace the model id in constants.py with the one you get from TheBloke ( https://huggingface.co/TheBloke ) but must be 4 bit quantized, GPTQ type, and Mistral based model. I do not support other type of model format.
+The default model is the one that is working right now. Somehow if using another GPTQ quantized model, it will have problem. But the current model is smart enough for talking with your document. Maybe in future I will fix that.
 
 ## Forked from awesome original LocalGPT
 https://github.com/PromtEngineer/localGPT
