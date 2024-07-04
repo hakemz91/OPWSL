@@ -49,7 +49,7 @@ python start_date.py && python ingest_AS.py && python finish_date.py && python i
 
 6)
 echo -e "\e[38;5;147mRunning Option 6: Chat with GUI(But no ingestion and saving chat history)\e[0m"
-python runGUI.py
+streamlit run runGUI.py
 ;;
 
 *)
