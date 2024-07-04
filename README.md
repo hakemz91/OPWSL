@@ -1,5 +1,5 @@
 # OPWSL
-Improved version of NuWSL with minor but life changing feature updates.
+Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can doing RAG using chromadb database which you can create easily with this. It is for NVIDIA GPU user and WSL2 Windows.
 
 ## Note that
 First run will take some time to download the model. Let it finish. And GUI version will not loaded properly until everything downloaded and loaded. So please choose the console version first for convenience. After that you can restart and use GUI properly.
