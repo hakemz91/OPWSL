@@ -69,7 +69,7 @@ pip install -r requirements.txt
 CMAKE_ARGS="-DLLAMA_CUBLAS=on" FORCE_CMAKE=1 pip install llama-cpp-python==0.1.83 --no-cache-dir
 ```
 
-10. Done installation.
+10. Done installation and then just close cmd console. Usage as below:
 
 ## How to use
 1. First put your pdf, docs, txt and etc. (supported) documents in SOURCE DOCEUMENTS folder, start the launcher and choose Option 4 to ingest your documents. First time run it will download the embedding model so will take some time.
