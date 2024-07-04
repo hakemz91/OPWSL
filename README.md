@@ -72,8 +72,8 @@ CMAKE_ARGS="-DLLAMA_CUBLAS=on" FORCE_CMAKE=1 pip install llama-cpp-python==0.1.8
 10. Done installation and then just close cmd console. Usage as below:
 
 ## How to use
-1. First put your pdf, docs, txt and etc. (supported) documents in SOURCE DOCEUMENTS folder, start the launcher and choose Option 4 to ingest your documents. First time run it will download the embedding model so will take some time.
-2. Then to chat, run option 1 first and let it finish for downloading the chat model. It will take some times depending on your internet speed. When it finish, you can chat with that, or type exit, answer y and choose the options again.
+1. First put all your pdf, docs, txt and etc. (supported) documents in SOURCE DOCEUMENTS folder, start the launcher and choose Option 4 to ingest your documents. First time run it will download the embedding model so will take some time.
+2. Then, run option 1 and let it finish downloading the chat model. It will take some times depending on your internet speed. When it finish, you can chat with that, or type exit, answer y and choose the options again.
 
 ## Export to .CSV and .TXT
 
