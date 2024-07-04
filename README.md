@@ -1,5 +1,5 @@
 # OPWSL
-Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can talk to your documents. And it is for NVIDIA GPU user and WSL2 Windows.
+Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can talk to your documents. And it is for NVIDIA GPU user and WSL2 Windows. However, it may worked fine for Ubuntu or Linux too.
 
 ## Features
 
