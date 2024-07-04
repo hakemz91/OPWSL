@@ -2,15 +2,13 @@
 Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can talk to your documents. And it is for NVIDIA GPU user and WSL2 Windows. However, it may worked fine for Ubuntu or Linux too.
 
 ## Features
-
-1. Now have GUI option (but I don't recommend this because cmd console is much faster, clearer and simpler. Why makes our life harder? :D ).
-2. Easy to use with simple options.
-3. Option to auto shutdown the PC after the ingestion is done. (useful for overnight bulk file ingestion) 
-4. Simple logging of ingestion start and finish time.
-5. Option to run the chat and saving the chat history (Q&A pairs) both into csv and txt files (localGPT only save into csv).
-6. A bit of colored texts for easy reading.
-7. Displaying time taken for generating response.
-8. Auto detect the same documents when ingesting so no duplicate ingestion.
+1. Easy to use with simple options.
+2. Option to auto shutdown the PC after the ingestion is done. (useful for overnight bulk file ingestion) 
+3. Simple logging of ingestion start and finish time.
+4. Option to run the chat and saving the chat history (Q&A pairs) both into csv and txt files (localGPT only save into csv).
+5. A bit of colored texts for easy reading.
+6. Displaying time taken for generating response.
+7. Auto detect the same documents when ingesting so no duplicate ingestion.
 
 ![Alt text](https://github.com/hakemz91/NuWSL/blob/main/01_im.png)
 
@@ -75,7 +73,7 @@ CMAKE_ARGS="-DLLAMA_CUBLAS=on" FORCE_CMAKE=1 pip install llama-cpp-python==0.1.8
 
 ## How to use
 1. First put your pdf, docs, txt and etc. (supported) documents in SOURCE DOCEUMENTS folder, start the launcher and choose Option 4 to ingest your documents. First time run it will download the embedding model so will take some time.
-2. Then to chat, run option 1 first and let it finish for downloading the chat model. It will take some times depending on your internet speed. When it finish, you can chat with that, or type exit, answer y and choose again the "chat with GUI" version, copy the url and open in browser.
+2. Then to chat, run option 1 first and let it finish for downloading the chat model. It will take some times depending on your internet speed. When it finish, you can chat with that, or type exit, answer y and choose the options again.
 
 ## Export to .CSV and .TXT
 
