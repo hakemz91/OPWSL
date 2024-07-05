@@ -1,5 +1,5 @@
 # OPWSL
-Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can talk to your documents. And it is for NVIDIA GPU user and WSL2 Windows. However, it may worked fine for Ubuntu or Linux too.
+Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can talk to your documents and retrieve information very fast (3 to 15 seconds depending on your question(RTX 3060 12 GB), even for gigabytes of database, ), but only for NVIDIA GPU user and WSL2 Windows. However, it may worked fine for Ubuntu or Linux too since WSL is just Ubuntu/Linux.
 
 ## Features
 1. New! Auto detect the same documents when ingesting so no duplicate ingestion. The logs are in "file_done_ingested.log" and "duplicate_not_ingested.log" files. To reingest the same thing, delete these two .log files.
