@@ -2,7 +2,7 @@
 Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can talk to your documents and retrieve information very fast (3 to 15 seconds depending on your question(RTX 3060 12 GB), even for gigabytes of database, ), but only for NVIDIA GPU user and WSL2 Windows. However, it may worked fine for Ubuntu or Linux too since WSL is just Ubuntu/Linux.
 
 ## Features
-1. New! Auto detect the same documents when ingesting so no duplicate ingestion. The logs are in "file_done_ingested.log" and "duplicate_not_ingested.log" files. To reingest the same thing, delete these two .log files.
+1. New! Auto detect the same documents when ingesting so no duplicate ingestion.
 2. Easy to use with simple options.
 3. Option to auto shutdown the PC after the ingestion is done. (useful for overnight bulk file ingestion) 
 4. Simple logging of ingestion start and finish time for both auto shutdown and non-auto ingestion.
@@ -74,6 +74,7 @@ CMAKE_ARGS="-DLLAMA_CUBLAS=on" FORCE_CMAKE=1 pip install llama-cpp-python==0.1.8
 ## How to use
 1. First put all your pdf, docs, txt and etc. (supported) documents in SOURCE DOCEUMENTS folder, start the launcher and choose Option 4 to ingest your documents. First time run it will download the embedding model so will take some time.
 2. Then, run option 1 and let it finish downloading the chat model. It will take some times depending on your internet speed. When it finish, you can chat with that, or type exit, answer y and choose the options again.
+3. MOST IMPORTANT please note that if you have DB database folder backup from NuWSL, it will not work with this OPWSL ingest script. So unfortunately you have to re-ingest everything.
 
 ## Export to .CSV and .TXT
 
@@ -83,9 +84,9 @@ Choose option 3 to run the chat so that it will save the chat history both into 
 
 After every ingestion for both without and with auto shutdown system, an Ingestion_time_log.txt file will be updated. So the txt file will contain the start and finish date of latest run process.
 
-## Ingested Files Logging
+## Ingested Files Logging and Duplicate Files Detection
 
-Each time you run the ingestion, a list of ingested file names are logged into file_done_ingested.log file. This is useful if you forgot whether you ingested certain files already or not. However, again, note that over time, the list can be so huge like maybe thousands, that it will be slow to open the file. So you can delete that file occasionally and it will be rebuilded next time you ingest files.
+Each time you run the ingestion, a list of ingested file names are logged into file_done_ingested.log file. This is useful if you forgot whether you ingested certain files already or not. However, again, note that over time, the list can be so huge like maybe thousands, that it will be slow to open the file. So you can delete that file occasionally and it will be rebuilded next time you ingest files. However, when you delete that and accidentaly ingest the same files, it will not detect that and will reingest it again. The logs are in "file_done_ingested.log" and "duplicate_not_ingested.log" files. To reingest the same thing, delete these two .log files.
 
 ## How to Reset the Vector Database
 
@@ -93,7 +94,7 @@ Just delete the DB folder and reingesting back using option 4 or 5.
 
 ## How to Change Model
 
-The default model is the one that is working right now. Somehow if using another 4 bit GPTQ quantized model, it will have problem. But the current model is smart enough for talking with your document. Maybe in future I will fix that.
+The default model is the one that is working right now. Somehow if using another 4 bit GPTQ quantized model, it will have problem. But the current model is smart enough for talking with your document and probably overkill. There is a model like Qwen2 1.5B that is very much lighter and faster but still good enough for talking with documents. Maybe in future I will fix that.
 
 ## Forked from awesome original LocalGPT
 https://github.com/PromtEngineer/localGPT
