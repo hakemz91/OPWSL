@@ -2,13 +2,13 @@
 Improved version of NuWSL with minor but life changing feature updates. It is the same chatbot which can talk to your documents. And it is for NVIDIA GPU user and WSL2 Windows. However, it may worked fine for Ubuntu or Linux too.
 
 ## Features
-1. Easy to use with simple options.
-2. Option to auto shutdown the PC after the ingestion is done. (useful for overnight bulk file ingestion) 
-3. Simple logging of ingestion start and finish time.
-4. Option to run the chat and saving the chat history (Q&A pairs) both into csv and txt files (localGPT only save into csv).
-5. A bit of colored texts for easy reading.
-6. Displaying time taken for generating response.
-7. Auto detect the same documents when ingesting so no duplicate ingestion.
+1. New! Auto detect the same documents when ingesting so no duplicate ingestion. The logs are in "file_done_ingested.log" and "duplicate_not_ingested.log" files. To reingest the same thing, delete these two .log files.
+2. Easy to use with simple options.
+3. Option to auto shutdown the PC after the ingestion is done. (useful for overnight bulk file ingestion) 
+4. Simple logging of ingestion start and finish time for both auto shutdown and non-auto ingestion.
+5. Option to run the chat and saving the chat history (Q&A pairs) both into csv and txt files.
+6. A bit of colored texts for easy reading.
+7. Displaying time taken for generating response.
 
 ![Alt text](https://github.com/hakemz91/NuWSL/blob/main/01_im.png)
 
